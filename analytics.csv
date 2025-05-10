@@ -1,0 +1,21 @@
+timestamp,user_id,event_type,message_text,error,response_len,source
+2025-04-11T15:22:31.377715,187786,app_start_daily,,,0,telegram
+2025-04-11T15:22:42.810294,187786,app_start_daily,,,0,telegram
+2025-04-11T15:22:52.339064,187786,button_pressed,Как ты сможешь мне помочь?,,0,telegram
+2025-04-11T15:23:05.171677,187786,message_sent,мне плохо,,0,telegram
+2025-04-11T15:23:16.105289,187786,message_success,мне плохо,,673,telegram
+2025-04-11T15:23:41.901124,187786,message_sent,я поругался со всеми и чувствую себя одиноко,,0,telegram
+2025-04-11T15:23:57.404536,187786,message_success,я поругался со всеми и чувствую себя одиноко,,986,telegram
+2025-04-11T15:24:41.670376,187786,app_start_daily,,,0,telegram
+2025-04-11T15:30:01.034940,187786,app_start_daily,,,0,telegram
+2025-04-11T15:31:12.455149,187786,button_click,Я не справляюсь,,0,telegram
+2025-04-11T15:31:26.269862,187786,message_success,Я не справляюсь,,644,telegram
+2025-04-11T15:31:37.240441,187786,button_click,Мне тревожно,,0,telegram
+2025-04-11T15:32:05.403011,187786,message_success,Мне тревожно,,809,telegram
+2025-04-11T15:41:05.647615,187786,app_start_daily,,,0,telegram
+2025-04-11T15:41:05.651599,187786,message_sent,Я в депрессии,,0,telegram
+2025-04-11T15:41:15.689783,187786,message_success,Я в депрессии,,1092,telegram
+2025-04-11T15:41:45.490486,187786,app_start_daily,,,0,telegram
+2025-04-11T15:41:53.000682,187786,button_click,Я в депрессии,,0,telegram
+2025-04-11T15:42:02.827744,187786,message_success,Я в депрессии,,946,telegram
+2025-04-12T20:28:21.836214,187786,app_start_daily,,,0,telegram
