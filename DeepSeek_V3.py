@@ -48,7 +48,6 @@ TG_BOT_TOKEN = "7960887441:AAH2yKOa-wzaQ400u-0CoCoccIqmeiwTxwc"      # заме�
 MODEL_ID = "deepseek/deepseek-chat-v3-0324:free"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 GOOGLE_SHEET_NAME = "BotAnalytics"
-SERVICE_ACCOUNT_FILE = "creds.json"
 
 # --- Настройка Google Sheets ---
 scope = [
