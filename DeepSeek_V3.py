@@ -298,7 +298,7 @@ async def handle_start(message: types.Message):
     user_characters[user_id] = "larisa"
 
     # Фото
-    photo = FSInputFile("/Users/aleksandr/Desktop/media/start_image.png")
+    photo = FSInputFile("media/start_image.png")
 
     # Приветственный текст
     caption = (
@@ -427,11 +427,11 @@ async def handle_character_selection(callback_query: types.CallbackQuery):
 
         # Путь к изображениям
         image_paths = {
-            "petrovich": "/Users/aleksandr/Desktop/media/petrovich.png",
-            "larisa": "/Users/aleksandr/Desktop/media/larisa.png",
-            "valya": "/Users/aleksandr/Desktop/media/valya.png",
-            "ivanov": "/Users/aleksandr/Desktop/media/ivanov.png",
-            "boris": "/Users/aleksandr/Desktop/media/boris.png"
+            "petrovich": "media/petrovich.png",
+            "larisa": "media/larisa.png",
+            "valya": "media/valya.png",
+            "ivanov": "media/ivanov.png",
+            "boris": "media/boris.png"
         }
 
         # Если есть фото для персонажа — отправляем его
