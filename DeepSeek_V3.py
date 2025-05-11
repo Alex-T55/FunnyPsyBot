@@ -5,6 +5,7 @@ import json
 import re
 import httpx
 import time
+from google.oauth2 import service_account
 
 def is_invalid_response(text: str) -> bool:
     text = text.strip()
