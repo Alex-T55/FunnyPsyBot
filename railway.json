@@ -14,10 +14,6 @@
       }
     },
     "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 10,
-    "envVars": {
-      "BOT_TOKEN": "7960887441:AAH2yKOa-wzaQ400u-0CoCoccIqmeiwTxwc",
-      "GOOGLE_SHEET_ID": "1i-oDX4Xn1JG64Qpgt2kqJsXk2I1H2LFEhsMPxdIynqo"
-    }
+    "restartPolicyMaxRetries": 10, 
   }
 }
