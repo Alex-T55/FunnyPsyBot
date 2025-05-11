@@ -54,7 +54,8 @@ scope = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive"
 ]
-creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=scope)
+creds_dict = json.loads(os.environ["CREDS_JSON"])
+creds = service_account.Credentials.from_service_account_info(creds_dict, scopes=scope)
 client = gspread.authorize(creds)
 print("✅ Авторизация Google прошла")
 print("✅ Таблица открыта")
