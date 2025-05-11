@@ -44,8 +44,10 @@ import gspread
 from google.oauth2.service_account import Credentials
 
 # --- Конфигурация ---
-OPENROUTER_API_KEY = "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"  # замените на ваш ключ
-TG_BOT_TOKEN = "7960887441:AAH2yKOa-wzaQ400u-0CoCoccIqmeiwTxwc"      # замените на ваш токен
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+if not OPENROUTER_API_KEY:
+    raise ValueError("❌ Переменная окружения OPENROUTER_API_KEY не найдена!")
+TG_BOT_TOKEN = "7960887441:AAH2yKOa-wzaQ400u-0CoCoccIqmeiwTxwc"      
 MODEL_ID = "deepseek/deepseek-chat-v3-0324:free"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 GOOGLE_SHEET_NAME = "BotAnalytics"
@@ -239,9 +241,12 @@ def log_event(
 # --- Запрос к OpenRouter ---
 async def ask_deepseek(prompt: str, system_prompt: str) -> tuple[str, float]:
     start_time = time.time()
+    api_key = os.getenv("OPENROUTER_API_KEY")
+    if not api_key:
+        raise ValueError("❌ OPENROUTER_API_KEY не найден в окружении!")
 
     headers = {
-        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
         "HTTP-Referer": "https://t.me/FunnyPsyBot",
         "X-Title": "FunnyPsyBot"
