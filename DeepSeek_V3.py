@@ -47,7 +47,7 @@ from google.oauth2.service_account import Credentials
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 if not OPENROUTER_API_KEY:
     raise ValueError("❌ Переменная окружения OPENROUTER_API_KEY не найдена!")
-TG_BOT_TOKEN = "7960887441:AAH2yKOa-wzaQ400u-0CoCoccIqmeiwTxwc"      
+TG_BOT_TOKEN = "7960887441:AAF48D0Pv_IZXZIwm_g1Tbe19ePxkeyKRYg"      
 MODEL_ID = "deepseek/deepseek-chat-v3-0324"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 GOOGLE_SHEET_NAME = "BotAnalytics"
